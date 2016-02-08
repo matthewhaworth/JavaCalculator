@@ -19,7 +19,7 @@ public class Calculator
 	
 	public double divide(double number1, double number2) 
 	{
-		if (number2 == 0) {
+		if (new Double(number2).equals(0.0)) {
 			throw new DivideByZeroException();
 		}
 		
