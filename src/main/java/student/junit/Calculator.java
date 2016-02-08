@@ -17,8 +17,12 @@ public class Calculator
 		return number1 * number2;
 	}
 	
-	public double divide(double number1, double number2)
+	public double divide(double number1, double number2) 
 	{
+		if (number2 == 0) {
+			throw new DivideByZeroException();
+		}
+		
 		return number1 / number2;
 	}
 }

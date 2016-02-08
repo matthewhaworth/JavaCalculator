@@ -53,11 +53,11 @@ public class TestCalculator
 
 	@Test
 	public void divide_nontrivial()
-	{
+	{	
 		assertEquals(calculator.divide(9, 4), 2.25, 0);
 	}
 	
-	@Test
+	@Test(expected=DivideByZeroException.class)
 	public void divide_byZero()
 	{
 		assertEquals(calculator.divide(9, 0), Double.POSITIVE_INFINITY, 0);
